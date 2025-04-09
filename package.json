@@ -1,0 +1,26 @@
+{
+  "name": "kajal_8972108_assignment04_mat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajalsandha/Kajal_8972108_Assignment04_MAT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kajalsandha/Kajal_8972108_Assignment04_MAT/issues"
+  },
+  "homepage": "https://github.com/kajalsandha/Kajal_8972108_Assignment04_MAT#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.1"
+  }
+}
