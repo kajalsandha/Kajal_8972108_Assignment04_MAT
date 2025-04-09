@@ -20,7 +20,3 @@ Thumbs.db
 dist/
 build/
 .next/
-
-# Package lock file (optional)
-package-lock.json
-
