@@ -1,14 +1,14 @@
-export default function calculateCanvasSize(length: string, width: string): number {
-  // Convert strings to integers and ensure they are valid
-  const parsedLength = parseInt(length, 10);
-  const parsedWidth = parseInt(width, 10);
+// calculateCanvasPerimeter.ts
+export default function calculateCanvasPerimeter(length: string | number, width: string | number): number {
+  // Convert the inputs to numbers in case they are strings
+  const lengthNum = typeof length === 'string' ? parseInt(length) : length;
+  const widthNum = typeof width === 'string' ? parseInt(width) : width;
 
-  // Check if the parsed values are valid numbers
-  if (isNaN(parsedLength) || isNaN(parsedWidth)) {
-    throw new Error("Invalid input: Both length and width must be valid numbers.");
+  // Handle invalid inputs (NaN check)
+  if (isNaN(lengthNum) || isNaN(widthNum)) {
+    return 0;
   }
 
-  // Return the calculated canvas size (perimeter in this case)
-  return 2 * (parsedLength + parsedWidth);
+  return 2 * (lengthNum + widthNum);
 }
 

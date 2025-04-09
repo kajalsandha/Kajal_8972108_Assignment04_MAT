@@ -1,21 +1,15 @@
-export default function calculateCanvasSize(
-  length: string,
-  width: string
-): number | string {
-  // Parse inputs to integers
-  const parsedLength = parseInt(length, 10);
-  const parsedWidth = parseInt(width, 10);
+// src/calculateCanvasDiagonal/calculateCanvasDiagonal.ts
 
-  // Validate inputs to ensure they are numbers
-  if (isNaN(parsedLength) || isNaN(parsedWidth)) {
-    return 'Invalid input: Both length and width must be valid numbers.';
+export function calculateCanvasDiagonal(width: string | number, height: string | number): number {
+  const w = Number(width);
+  const h = Number(height);
+
+  // Check if conversion to number failed
+  if (isNaN(w) || isNaN(h)) {
+    return NaN;
   }
 
-  // Ensure inputs are non-negative
-  if (parsedLength < 0 || parsedWidth < 0) {
-    return 'Invalid input: Length and width must be non-negative.';
-  }
-
-  // Calculate and return the perimeter
-  return 2 * (parsedLength + parsedWidth);
+  // Calculate diagonal using Pythagoras theorem
+  return Math.sqrt(Math.abs(w) ** 2 + Math.abs(h) ** 2);
 }
+
