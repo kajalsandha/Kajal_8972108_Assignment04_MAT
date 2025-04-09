@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build files
+dist/
+build/
+.next/
+
+# Package lock file (optional)
+package-lock.json
+
