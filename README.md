@@ -43,14 +43,3 @@ The project is organized into the following folders, each containing a `.ts` fil
   - `paintRequiredForMultipleCoats.test.ts` - Unit tests for `paintRequiredForMultipleCoats.ts`.
 
 - `main.ts` - The main script that runs the various calculations using the above functions.
-
-## Getting Started
-
-### Prerequisites
-
-Ensure you have **Node.js** and **npm** installed:
-
-```bash
-node -v
-npm -v
-
